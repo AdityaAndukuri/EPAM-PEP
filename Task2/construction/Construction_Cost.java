@@ -4,7 +4,7 @@ package construction;
  */
 import java.util.Scanner;
 
-public class ConstructionCostCalculator {
+public class Construction_Cost{
 	public static void main(String args[]){
 		Scanner sc=new Scanner(System.in);
 		Construction construction;
