@@ -10,6 +10,7 @@ public class Calculator {
 	public static void main(String args[]){
 		
 		additionTestCases();
+		subtractionTestCases();
 		multiplicationTestCases();
 		divisionTestCases();
 	}
@@ -27,6 +28,24 @@ public class Calculator {
 		addition=new Addition(-5,-7);
 		if(addition.add()==-12)
 			System.out.println("Addition of  "+(-5)+" and "+(-7)+" is "+(-12));
+		else
+			System.out.println("Wrong output for "+(-5)+" and "+(-7));
+		
+		
+	}
+
+	static void subtractionTestCases(){
+		//Test case 1:
+		Subtraction subtraction=new Subtraction(1,1);
+		if(subtraction.sub()==0)
+			System.out.println("Subtraction of  "+1+" and "+1+" is "+0);
+		else
+			System.out.println("Wrong output for "+1+" and "+1);
+		
+		//Test case 2
+		subtraction=new Subtraction(-5,-7);
+		if(subtraction.sub()==2)
+			System.out.println("Subtraction of  "+(-5)+" and "+(-7)+" is "+2);
 		else
 			System.out.println("Wrong output for "+(-5)+" and "+(-7));
 		
